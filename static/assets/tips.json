@@ -1,0 +1,368 @@
+[
+    {
+        "item": "person",
+        "categories": "1",
+        "detail": "is our purpose of service. Hi there",
+        "tips": ""
+    },
+    {
+        "item": "motorcycle",
+        "categories": "5",
+        "detail": "cannot be carried on the plane or check-in",
+        "tips": ""
+    },
+    {
+        "item": "bus",
+        "categories": "5",
+        "detail": "cannot be carried on the plane or check-in",
+        "tips": ""
+    },
+    {
+        "item": "truck",
+        "categories": "5",
+        "detail": "cannot be carried on the plane or check-in",
+        "tips": ""
+    },
+    {
+        "item": "car",
+        "categories": "5",
+        "detail": "cannot be carried on the plane or check-in",
+        "tips": ""
+    },
+    {
+        "item": "airplane",
+        "categories": "5",
+        "detail": "cannot be carried on the plane or check-in",
+        "tips": ""
+    },
+    {
+        "item": "train",
+        "categories": "5",
+        "detail": "cannot be carried on the plane or check-in",
+        "tips": ""
+    },
+    {
+        "item": "boat",
+        "categories": "5",
+        "detail": "cannot be carried on the plane or check-in",
+        "tips": ""
+    },
+    {
+        "item": "traffic light",
+        "categories": "5",
+        "detail": "cannot be carried on the plane or check-in",
+        "tips": ""
+    },
+    {
+        "item": "stop sign",
+        "categories": "5",
+        "detail": "cannot be carried on the plane or check-in",
+        "tips": ""
+    },
+    {
+        "item": "bench",
+        "categories": "5",
+        "detail": "cannot be carried on the plane or check-in",
+        "tips": ""
+    },
+    {
+        "item": "fire hydrant",
+        "categories": "5",
+        "detail": "cannot be carried on the plane or check-in",
+        "tips": ""
+    },
+    {
+        "item": "parking meter",
+        "categories": "5",
+        "detail": "cannot be carried on the plane or check-in",
+        "tips": ""
+    },
+    {
+        "item": "bird",
+        "categories": "5",
+        "detail": "cannot be carried on the plane or check-in",
+        "tips": ""
+    },
+    {
+        "item": "dog",
+        "categories": "5",
+        "detail": "cannot be carried on the plane or check-in",
+        "tips": ""
+    },
+    {
+        "item": "sheep",
+        "categories": "5",
+        "detail": "cannot be carried on the plane or check-in",
+        "tips": ""
+    },
+    {
+        "item": "elephant",
+        "categories": "5",
+        "detail": "cannot be carried on the plane or check-in",
+        "tips": ""
+    },
+    {
+        "item": "zebra",
+        "categories": "5",
+        "detail": "cannot be carried on the plane or check-in",
+        "tips": ""
+    },
+    {
+        "item": "cat",
+        "categories": "5",
+        "detail": "cannot be carried on the plane or check-in",
+        "tips": ""
+    },
+    {
+        "item": "horse",
+        "categories": "5",
+        "detail": "cannot be carried on the plane or check-in",
+        "tips": ""
+    },
+    {
+        "item": "cow",
+        "categories": "5",
+        "detail": "cannot be carried on the plane or check-in",
+        "tips": ""
+    },
+    {
+        "item": "bear",
+        "categories": "5",
+        "detail": "cannot be carried on the plane or check-in",
+        "tips": ""
+    },
+    {
+        "item": "giraffe",
+        "categories": "5",
+        "detail": "cannot be carried on the plane or check-in",
+        "tips": ""
+    },
+    {
+        "item": "potted plant",
+        "categories": "5",
+        "detail": "cannot be carried or check-in",
+        "tips": "need to check destination's restruction"
+    },
+    {
+        "item": "surfboard",
+        "categories": "3",
+        "detail": "can be cheack in",
+        "tips": ""
+    },
+    {
+        "item": "scissors",
+        "categories": "3",
+        "detail": "can be check-in",
+        "tips": "blade cannot excess 4cm"
+    },
+    {
+        "item": "fork",
+        "categories": "3",
+        "detail": "can be check-in",
+        "tips": ""
+    },
+    {
+        "item": "spoon",
+        "categories": "3",
+        "detail": "can be check-in",
+        "tips": ""
+    },
+    {
+        "item": "knife",
+        "categories": "3",
+        "detail": "can be check-in",
+        "tips": "blade cannot excess 4cm"
+    },
+    {
+        "item": "skis",
+        "categories": "3",
+        "detail": "can be check-in",
+        "tips": ""
+    },
+    {
+        "item": "basketball bat",
+        "categories": "3",
+        "detail": "can be check-in",
+        "tips": ""
+    },
+    {
+        "item": "skateboard",
+        "categories": "3",
+        "detail": "can be check-in",
+        "tips": ""
+    },
+    {
+        "item": "tennis racket",
+        "categories": "3",
+        "detail": "can be check-in",
+        "tips": ""
+    },
+    {
+        "item": "bottle",
+        "categories": "2",
+        "detail": "needed second round check",
+        "tips": "you can scan the QR code of the bottle to check the category of the liquid"
+    },
+    {
+        "item": "umbrella",
+        "categories": "2",
+        "detail": "needed second round check",
+        "tips": "only folding umbrellas less than 100 cm in length can be carried on the plane, please check the length of your umbrella."
+    },
+    {
+        "item": "backpack",
+        "categories": "2",
+        "detail": "needed second round check",
+        "tips": "please check the contents and backpack dimensions."
+    },
+    {
+        "item": "chair",
+        "categories": "2",
+        "detail": "needed second round check",
+        "tips": "please check the dimensions."
+    },
+    {
+        "item": "suitcase",
+        "categories": "2",
+        "detail": "needed second round check",
+        "tips": "please check the contents and suitcase dimensions."
+    },
+    {
+        "item": "bicycle",
+        "categories": "2",
+        "detail": "needed second round check",
+        "tips": "only folding bicycle with size requirements can be checked, please check your bicycle."
+    },
+    {
+        "item": "vase",
+        "categories": "2",
+        "detail": "needed second round check",
+        "tips": "cannot excess 10000usd"
+    },
+    {
+        "item": "kite",
+        "categories": "1",
+        "detail": "can be carried on the plane and check-in",
+        "tips": ""
+    },
+    {
+        "item": "tie",
+        "categories": "1",
+        "detail": "can be carried on the plane and check-in",
+        "tips": ""
+    },
+    {
+        "item": "frisbee",
+        "categories": "1",
+        "detail": "can be carried on the plane and check-in",
+        "tips": ""
+    },
+    {
+        "item": "snowboard",
+        "categories": "1",
+        "detail": "can be carried on the plane and check-in",
+        "tips": ""
+    },
+    {
+        "item": "baseball glove",
+        "categories": "1",
+        "detail": "can be carried on the plane and check-in",
+        "tips": ""
+    },
+    {
+        "item": "hair drier",
+        "categories": "1",
+        "detail": "can be carried on the plane and check-in",
+        "tips": ""
+    },
+    {
+        "item": "toothbrush",
+        "categories": "1",
+        "detail": "can be carried on the plane and check-in",
+        "tips": ""
+    },
+    {
+        "item": "teddy bear",
+        "categories": "1",
+        "detail": "can be carried on the plane and check-in",
+        "tips": ""
+    },
+    {
+        "item": "book",
+        "categories": "1",
+        "detail": "can be carried on the plane and check-in",
+        "tips": ""
+    },
+    {
+        "item": "remote",
+        "categories": "1",
+        "detail": "can be carried on the plane and check-in",
+        "tips": ""
+    },
+    {
+        "item": "laptop",
+        "categories": "1",
+        "detail": "can be carried on the plane and check-in",
+        "tips": ""
+    },
+    {
+        "item": "cell phone",
+        "categories": "1",
+        "detail": "can be carried on the plane and check-in",
+        "tips": ""
+    },
+    {
+        "item": "mouse",
+        "categories": "1",
+        "detail": "can be carried on the plane and check-in",
+        "tips": ""
+    },
+    {
+        "item": "keyboard",
+        "categories": "1",
+        "detail": "can be carried on the plane and check-in",
+        "tips": ""
+    },
+    {
+        "item": "apple",
+        "categories": "1",
+        "detail": "can be carried on the plane and check-in",
+        "tips": ""
+    },
+    {
+        "item": "orange",
+        "categories": "1",
+        "detail": "can be carried on the plane and check-in",
+        "tips": ""
+    },
+    {
+        "item": "carrot",
+        "categories": "1",
+        "detail": "can be carried on the plane and check-in",
+        "tips": ""
+    },
+    {
+        "item": "banana",
+        "categories": "1",
+        "detail": "can be carried on the plane and check-in",
+        "tips": ""
+    },
+    {
+        "item": "wine glass",
+        "categories": "1",
+        "detail": "can be carried on the plane and check-in",
+        "tips": ""
+    },
+    {
+        "item": "bowl",
+        "categories": "1",
+        "detail": "can be carried on the plane and check-in",
+        "tips": ""
+    },
+    {
+        "item": "sports ball",
+        "categories": "1",
+        "detail": "can be carried on the plane and check-in",
+        "tips": ""
+    }
+]

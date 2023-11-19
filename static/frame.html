@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<!--22098637D BI Jingyun EIE4432 Project-->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PackSmart@Cathay</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd">console.log('tfjs version:', tf.version.tfjs);</script>
+    <script src="./app.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        .switch {
+            width: auto;
+        }
+
+        @media (max-width: 991.98px) {
+
+            /* Corresponds to just below Bootstrap's 'lg' breakpoint */
+            .switch {
+                width: 100%;
+            }
+        }
+
+
+        /* 当视口宽度小于或等于600px时，我们假设用户正在使用手机，因此我们减小字体大小 */
+        @media only screen and (max-width: 600px) {
+            html {
+                font-size: 14px;
+            }
+        }
+
+        /* 当视口宽度大于600px但小于或等于1200px时，我们假设用户正在使用平板电脑，因此我们保持字体大小不变 */
+        @media only screen and (min-width: 601px) and (max-width: 1200px) {
+            html {
+                font-size: 15px;
+            }
+        }
+
+        /* 当视口宽度大于1200px时，我们假设用户正在使用电脑，因此我们增大字体大小 */
+        @media only screen and (min-width: 1201px) {
+            html {
+                font-size: 16px;
+            }
+        }
+    </style>
+    <style>
+        #overlay {
+            position: fixed;
+            /* Fix position on the top left corner of the screen */
+            top: 0;
+            left: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Black background with opacity */
+            z-index: 100;
+            /* Specify a stack order in case of overlapping elements */
+            display: flex;
+            /* Center the loader horizontally and vertically */
+            justify-content: center;
+            /* Center the loader horizontally */
+            align-items: center;
+            /* Center the loader vertically */
+            display: none;
+        }
+    </style>
+    <style>
+        #capture {
+            height: 4rem;
+        }
+
+        @media (max-width: 991.98px) {
+
+            /* Corresponds to just below Bootstrap's 'lg' breakpoint */
+            #capture {
+                height: 3rem;
+            }
+        }
+    </style>
+    <style>
+        #loading-text {
+            animation: move 2s infinite;
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            50% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="d-none d-lg-flex  justify-content-between align-items-center"
+        style="background-color: #F7F6F1; height: 2rem;">
+        <div class="px-5">
+            <a href="aboutus.html" class="mx-3 text-decoration-none" style="color: #005D63;">About us</a>
+        </div>
+        <div class="px-5">
+            <a href="#" class="mx-3 text-decoration-none" style="color: #005D63;">Search</a>
+            <a href="#" class="mx-3 text-decoration-none" style="color: #005D63;">Notification center</a>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg position-relative bg-body-tertiary">
+        <div class="container-fluid" style="height: 4rem;">
+            <div class="row h-100 switch ">
+                <div class="col-4 d-lg-none d-flex align-items-center">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="col-4 col-lg d-flex justify-content-center justify-content-lg-center h-100">
+                    <img class="h-50 my-auto w-auto mx-auto px-lg-5" src="icon.png">
+                </div>
+                <div class="col-4 d-none align-items-center justify-content-end">
+                    <a href="#" class="text-decoration-none" style="color: black">Sign in/up</a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item pe-lg-3">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item pe-lg-3">
+                        <a class="nav-link" href="./Order.html">Order</a>
+                    </li>
+                    <li class="nav-item pe-lg-3">
+                        <a class="nav-link" href="./EventDashborad.html">Events</a>
+                    </li>
+                    <li class="nav-item pe-lg-3">
+                        <a class="nav-link" href="./Book.html">Book</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="position-absolute end-0 top-0 h-100 d-flex align-items-center pe-5">
+                <a href="#" class="text-decoration-none" style="color: black">Sign in/up</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="d-flex justify-content-center align-items-center">
+            <form class="row g-3 bg-light p-2 rounded shadow mt-3" style="width: 80%;">
+                <div class="col col-lg-5 col-6">
+                    <select name="departure" class="form-select" id="departure" style="height: 4rem;">
+                        <option value="default">Leaving from</option>
+                        <option value="Hongkong">Hong Kong, (HKG)</option>
+                        <option value="Brussels">Brussels, (BRU)</option>
+                        <option value="London">London, (LHR / LGW)</option>
+                        <option value="LosAngeles">Los Angeles, (LAX)</option>
+                        <option value="NewYork">New York, (JFK)</option>
+                        <option value="Tokyo">Tokyo, (HND / NRT)</option>
+                        <option value="Sydney">Sydney, (SYD)</option>
+                        <option value="Paris">Paris, (CDG / ORY)</option>
+                        <option value="Dubai">Dubai, (DXB)</option>
+                        <option value="Amsterdam">Amsterdam, (AMS)</option>
+                        <option value="Singapore">Singapore, (SIN)</option>
+                        <option value="Frankfurt">Frankfurt, (FRA)</option>
+                        <option value="Beijing">Beijing, (PEK)</option>
+                        <option value="Shanghai">Shanghai, (PVG)</option>
+                        <option value="Toronto">Toronto, (YYZ)</option>
+                        <option value="Chicago">Chicago, (ORD)</option>
+                        <option value="SanFrancisco">San Francisco, (SFO)</option>
+                        <option value="Seoul">Seoul, (ICN)</option>
+                        <option value="Istanbul">Istanbul, (IST)</option>
+                        <option value="Mumbai">Mumbai, (BOM)</option>
+                        <option value="MexicoCity">Mexico City, (MEX)</option>
+                    </select>
+                </div>
+                <div class="col col-lg-2  d-none d-lg-flex justify-content-center">
+                    <img src="./assets/leave.png" style="max-height: 3rem;">
+                </div>
+                <div class="col col-lg-5 col-6">
+                    <select name="destination" class="form-select" id="destination" style="height: 4rem;">
+                        <option value="default">Going to</option>
+                        <option value="Hongkong">Hong Kong, (HKG)</option>
+                        <option value="Brussels">Brussels, (BRU)</option>
+                        <option value="London">London, (LHR / LGW)</option>
+                        <option value="LosAngeles">Los Angeles, (LAX)</option>
+                        <option value="NewYork">New York, (JFK)</option>
+                        <option value="Tokyo">Tokyo, (HND / NRT)</option>
+                        <option value="Sydney">Sydney, (SYD)</option>
+                        <option value="Paris">Paris, (CDG / ORY)</option>
+                        <option value="Dubai">Dubai, (DXB)</option>
+                        <option value="Amsterdam">Amsterdam, (AMS)</option>
+                        <option value="Singapore">Singapore, (SIN)</option>
+                        <option value="Frankfurt">Frankfurt, (FRA)</option>
+                        <option value="Beijing">Beijing, (PEK)</option>
+                        <option value="Shanghai">Shanghai, (PVG)</option>
+                        <option value="Toronto">Toronto, (YYZ)</option>
+                        <option value="Chicago">Chicago, (ORD)</option>
+                        <option value="SanFrancisco">San Francisco, (SFO)</option>
+                        <option value="Seoul">Seoul, (ICN)</option>
+                        <option value="Istanbul">Istanbul, (IST)</option>
+                        <option value="Mumbai">Mumbai, (BOM)</option>
+                        <option value="MexicoCity">Mexico City, (MEX)</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="row row-cols-lg-2 row-cols-1" style="background-color: #F1F4F1;">
+            <div class="col d-flex flex-column justify-content-center">
+                <div class="row">
+                    <video id="webcam" autoplay width="640" height="480" class="mx-auto mt-3"
+                        style="width: 80%; height: auto;"></video>
+                    <canvas id="canvas" width="640" height="480" style="display: none;width: 80%; height: auto;"
+                        class="mx-auto mt-3"></canvas>
+                </div>
+                <button id="capture" class="my-3 mx-auto"
+                    style="background-color: #002527; color:white; width: 80%; ">Capture</button>
+            </div>
+            <div class="col d-flex flex-lg-column flex-row justify-content-lg-start justify-content-center my-lg-auto">
+                <div class="mx-3" id="tips">
+                    <h1 class="mt-5 mb-5 mx-3 mt-lg-0" style="font-family: 'Roboto', sans-serif;">Welcome to
+                        PackSmart!🎬</h1>
+                    <p style="font-family: 'Roboto', sans-serif;" class="fs-4 mx-3">✨ Wait for the camera to load</p>
+                    <p style="font-family: 'Roboto', sans-serif;" class="fs-4 mx-3">💼 Select your departure and
+                        destination locations</p>
+                    <p style="font-family: 'Roboto', sans-serif;" class="fs-4 mx-3">👒 Press the button to take a
+                        picture and get useful tips</p>
+                    <p style="font-family: 'Roboto', sans-serif;" class="fs-4 mx-3">⚡️ Please follow the insturctions to
+                        double check items</p>
+                </div>
+            </div>
+        </div>
+        <div id="overlay" class="justify-content-center align-items-center flex-column">
+            <img src="./assets/Loading.gif" style="max-width: 10rem;display: none;" id="loading">
+            <p id="loading-text">Loading...</p>
+        </div>
+        <!--Enter the main here-->
+        <div class="d-flex justify-content-center my-3">
+            <p class="fs-3 my-3" style="font-family: 'Roboto', sans-serif;">Guess you need</p>
+        </div>
+        <div class="row mb-5">
+            <div id="goods-menu" class="col-lg-11 col-12 row row-cols-1 row-cols-md-2 row-cols-xxl-4"></div>
+            <div class="col-lg-1 col-12">
+                <a href="#"
+                    class="learn-more-btn text-decoration-none my-3 mx-auto d-flex flex-lg-column flex-row align-items-center justify-content-center">
+                    <div class="fs-4 fw-bolder">Learn More</div>
+                    <p class="arrow fs-4 fw-bolder">» » »</p>
+
+
+                </a>
+            </div>
+        </div>
+
+        <!--https://getemoji.com/-->
+    </main>
+    <footer class="py-3 fixed-bottom text-center" style="background-color: #F7F6F1">Notification: This is webpage for
+        Hackathon (Team:Hellowhat) </footer>
+</body>
+
+</html>

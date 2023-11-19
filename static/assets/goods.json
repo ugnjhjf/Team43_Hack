@@ -1,0 +1,122 @@
+[
+    {
+        "name": "GPS Bicycle meter",
+        "type": "Travel",
+        "price": "2899",
+        "point": "62070",
+        "image": "assets/GPS.jpeg",
+        "href": "https://lifestyle.asiamiles.com/zh/Lifestyle-Awards/Lifestyle-Awards/Sports-%2526-Leisure/Training-%2526-Fitness-%2528Gym%2529/Training-Accessories/Edge-540-GPS-Cycling-Computer-010-02694-08/p/LPI_3437"
+    },
+    {
+        "name": "Ultimate Memory Pillow",
+        "type": "Comfort",
+        "price": "368",
+        "point": "6200",
+        "image": "assets/pillow.jpeg",
+        "href": "https://lifestyle.asiamiles.com/zh/Lifestyle-Awards/Lifestyle-Awards/Travel/Travel-Essentials/Travel-Pillow%252C-The-Memory-Dreamer/p/PLL_0047_40002"
+    },
+    {
+        "name": "Travel Socket",
+        "type": "Necessities",
+        "price": "498",
+        "point": "8210",
+        "image": "assets/plug.jpeg",
+        "href": "https://lifestyle.asiamiles.com/zh/Lifestyle-Awards/Lifestyle-Awards/Travel/Travel-Essentials/Travel-Tech-%2526-Gadgets/1-World---Dreamer-100W-GaN-4-ports-%252B-AC-Travel-Adapter-%2528UA10UK%2529/p/GOL_1582"
+    },
+    {
+        "name": "Sun protection umbrella",
+        "type": "Necessities",
+        "price": "13",
+        "point": "2190",
+        "image": "assets/unbrella.jpeg",
+        "href": "https://lifestyle.asiamiles.com/zh/Lifestyle-Awards/Lifestyle-Awards/Travel/Travel-Essentials/Other-Accessories/UV-Protection-Travel-Umbrella/p/EML_0525_40005"
+    },
+    {
+        "name": "Walking Stick",
+        "type": "Travel",
+        "price": "399",
+        "point": "9600",
+        "image": "assets/stick.png",
+        "href": "https://lifestyle.asiamiles.com/en/Lifestyle-Awards/Lifestyle-Awards/Travel/Travel-Essentials/Other-Accessories/LAFUMA-LFS63355076-SHIFT-%25281-piece%2529/p/IFC_0698"
+    },
+    {
+        "name": "Shaped Eye Mask",
+        "type": "Comfort",
+        "price": "229",
+        "point": "3860",
+        "image": "assets/eyemask.jpeg",
+        "href": "https://lifestyle.asiamiles.com/en/Lifestyle-Awards/Lifestyle-Awards/Travel/Travel-Essentials/Shaped-Eye-Mask/p/PLL_0052"
+    },
+    {
+        "name": "BASE CAMP VOYAGER SLING Bag",
+        "type": "Travel",
+        "price": "442",
+        "point": "9740",
+        "image": "assets/SLINGBag.jpeg",
+        "href": "https://lifestyle.asiamiles.com/en/Lifestyle-Awards/Lifestyle-Awards/Travel/Backpacks-and-Bags/Crossbody/BASE-CAMP-VOYAGER-SLING-Bag-%2528NF0A81BN%2529/p/CWS_1278_40001"
+    },
+    {
+        "name": "HomePod Mini Blue",
+        "type": "Travel",
+        "price": "769",
+        "point": "19630",
+        "image": "assets/HomePodMiniBlue.jpeg",
+        "href": "https://lifestyle.asiamiles.com/en/Lifestyle-Awards/Lifestyle-Awards/Electronics/Apple/Accessories/HomePod-mini/p/APP_0136_40003"
+    },
+    {
+        "name": "Z 8 WITH NIKKOR Z 24-120mm f/4 S",
+        "type": "Travel",
+        "price": "41980",
+        "point": "949860",
+        "image": "assets/Nikon.jpeg",
+        "href": "https://lifestyle.asiamiles.com/en/Lifestyle-Awards/Lifestyle-Awards/Electronics/Cameras/Compact-Cameras/Z-8-WITH-NIKKOR-Z-24-120mm-f-4-S/p/CWS_1362"
+    },
+    {
+        "name": "Apple Watch Ultra 2 GPS + Cellular",
+        "type": "Travel",
+        "price": "6399",
+        "point": "161120",
+        "image": "assets/AppleWatch.jpeg",
+        "href": "https://lifestyle.asiamiles.com/en/Lifestyle-Awards/Lifestyle-Awards/Electronics/Apple/New-Apple-Arrivals/Apple-Watch-Ultra-2-GPS-%252B-Cellular%252C-49mm-Titanium-Case/p/APP_0373_40005_40006"
+    },
+    {
+        "name": "Bugaboo Beanie",
+        "type": "Travel",
+        "price": "239",
+        "point": "4020",
+        "image": "assets/bug.jpeg",
+        "href": "https://lifestyle.asiamiles.com/en/Lifestyle-Awards/Lifestyle-Awards/Sports-%2526-Leisure/Sports/Hiking/Hiking-Accessories/p/LPI_3494"
+    },
+    {
+        "name": "Flow Fremont Casual Footwear",
+        "type": "Travel",
+        "price": "749",
+        "point": "16820",
+        "image": "assets/shoe.jpeg",
+        "href": "https://lifestyle.asiamiles.com/en/Lifestyle-Awards/Lifestyle-Awards/Sports-%2526-Leisure/Sports/Hiking/Hiking-Shoes/p/LPI_3502_40003"
+    },
+    {
+        "name": "RELAXMUS Fascia Mini Massager (HL9)",
+        "type": "Travel",
+        "price": "498",
+        "point": "8990",
+        "image": "assets/gun.jpeg",
+        "href": "https://lifestyle.asiamiles.com/en/Lifestyle-Awards/Lifestyle-Awards/Sports-%2526-Leisure/Massage-%2526-Recovery/Massage-Gun/RELAXMUS-Fascia-Mini-Massager-%2528HL9%2529/p/GOL_1660"
+    },
+    {
+        "name": "Magware - Single Set - Blue MAG-SS-BLU",
+        "type": "Travel",
+        "price": "239",
+        "point": "5030",
+        "image": "assets/fork.png",
+        "href": "https://lifestyle.asiamiles.com/en/Lifestyle-Awards/Lifestyle-Awards/Sports-%2526-Leisure/Sports/Camping/Cooking-%2526-Picnic-Supplies/p/LPI_3461_40003"
+    },
+    {
+        "name": "Unisex Cyclone 3 Goggle AU",
+        "type": "Travel",
+        "price": "359",
+        "point": "5910",
+        "image": "assets/glass.jpeg",
+        "href": "https://lifestyle.asiamiles.com/en/Lifestyle-Awards/Lifestyle-Awards/Sports-%2526-Leisure/Sports/Swimming/%25E3%2580%2590Japan-Made-%25E3%2580%2591Unisex-Cyclone-3-Goggle-AU-%252833812272D665%2529-White-Blue/p/CWS_1294"
+    }
+]
